@@ -1,25 +1,16 @@
-
-/* Your CSS Code here. */
-
 .holder {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-template-rows: repeat(2, 100px);
-  grid-gap: 10px;
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
 }
 
 .item {
-  /* Optional styling for the items */
+  /* Adjust the width as needed */
+  width: 150px;
+  /* Add space between items */
+  margin: 10px;
+  /* Optional: Add styling for the items */
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
   padding: 10px;
-  text-align: center;
-}
-
-.item-1 {
-  /* Specific CSS to position item-1 in the center */
-  grid-column: 1 / span 2; /* Make item-1 span both columns */
-  grid-row: 1 / span 2; /* Make item-1 span both rows */
 }
